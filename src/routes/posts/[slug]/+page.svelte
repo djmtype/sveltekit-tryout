@@ -1,8 +1,9 @@
 <!-- src/routes/[slug]/+page.svelte -->
 <script lang="ts">
+	import type { PageData } from './$types'
 	import Meta from '$lib/components/Meta.svelte';
 	import {longDate} from '$lib/utils/helpers'
-	export let data;
+	export let data: PageData;
 	const { title, date, tags, description, Content } = data;
 </script>
 
@@ -21,3 +22,18 @@
 
 	<Content />
 </article>
+
+{#if data.tags.length}
+  <aside>
+    <h2>Posted in:</h2>
+    <ul>
+      {#each data.tags as tag}
+        <li>
+          <a href="/posts/tag/{tag}">
+            {tag}
+          </a>
+        </li>
+      {/each}
+    </ul>
+  </aside>
+{/if}
