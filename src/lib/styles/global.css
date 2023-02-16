@@ -1,0 +1,15 @@
+@import "./common/base.css";
+@inject "tokencss:base";
+
+pre	{
+	max-width: 100%;
+	overflow-x: auto;
+}
+
+body {
+overflow-x: hidden;
+}
+
+
+
+

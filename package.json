@@ -1,0 +1,43 @@
+{
+	"name": "sveltekit-loading",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"format": "prettier --plugin-search-dir . --write ."
+	},
+	"devDependencies": {
+		"@csstools/postcss-global-data": "^1.0.2",
+		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/adapter-static": "^2.0.1",
+		"@sveltejs/kit": "next",
+		"@types/postcss-preset-env": "^8.0.0",
+		"autoprefixer": "^10.4.13",
+		"eslint": "^8.34.0",
+		"eslint-config-prettier": "^8.6.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"mdsvex": "^0.10.6",
+		"postcss": "^8.4.21",
+		"postcss-cli": "^10.1.0",
+		"postcss-import": "^15.1.0",
+		"postcss-load-config": "^4.0.1",
+		"postcss-preset-env": "^8.0.1",
+		"prettier": "^2.8.4",
+		"prettier-plugin-svelte": "^2.9.0",
+		"svelte": "^3.55.1",
+		"svelte-check": "^3.0.3",
+		"tslib": "^2.5.0",
+		"typescript": "^4.9.5",
+		"vite": "^4.1.1"
+	},
+	"type": "module",
+	"dependencies": {
+		"@csstools/postcss-design-tokens": "^2.0.3",
+		"@tokencss/postcss": "^0.0.5",
+		"@tokencss/vite": "^0.0.3",
+		"dotenv": "^16.0.3"
+	}
+}
